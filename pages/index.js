@@ -22,33 +22,46 @@ const NAME = "Sumanth Madishetty";
 const SPECIAL_CHARACTER_INDEX = [0, 8];
 
 export default function Home() {
-  useEffect(() => {
-    // if (window.VANTA) {
-    //   window.VANTA.NET({
-    //     el: "#mainContainer",
-    //     mouseControls: true,
-    //     touchControls: true,
-    //     gyroControls: false,
-    //     minHeight: 200.0,
-    //     minWidth: 200.0,
-    //     scale: 1.0,
-    //     scaleMobile: 1.0,
-    //     color: "#ffbb8e",
-    //     backgroundColor: "black",
-    //     // points: 8.0,
-    //     points: 10.0,
-    //     maxDistance: 15.0,
-    //     spacing: 20.0,
-    //   });
-    // }
-    particlesJS.load("backCanvas", "particlesjs-config.json", function () {
-      console.log("callback - particles.js config loaded");
-    });
-  }, []);
+  // useEffect(() => {
+  //   // if (window.VANTA) {
+  //   //   window.VANTA.NET({
+  //   //     el: "#mainContainer",
+  //   //     mouseControls: true,
+  //   //     touchControls: true,
+  //   //     gyroControls: false,
+  //   //     minHeight: 200.0,
+  //   //     minWidth: 200.0,
+  //   //     scale: 1.0,
+  //   //     scaleMobile: 1.0,
+  //   //     color: "#ffbb8e",
+  //   //     backgroundColor: "black",
+  //   //     // points: 8.0,
+  //   //     points: 10.0,
+  //   //     maxDistance: 15.0,
+  //   //     spacing: 20.0,
+  //   //   });
+  //   // }
+  //   particlesJS.load("backCanvas", "particlesjs-config.json", function () {
+  //     console.log("callback - particles.js config loaded");
+  //   });
+  // }, []);
 
   return (
     // <div className={styles.container}>
     <>
+      <Script
+        strategy="lazyOnload"
+        onLoad={() => {
+          particlesJS.load(
+            "backCanvas",
+            "particlesjs-config.json",
+            function () {
+              console.log("callback - particles.js config loaded");
+            }
+          );
+        }}
+        src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
+      ></Script>
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
