@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
-import EXPERIENCE from "./experience.json";
-import CONTENT from "./content.json";
+import EXPERIENCE from "./api/experience.json";
+import CONTENT from "./api/content.json";
 
 function greetingMessage() {
   const date = new Date();
@@ -62,7 +62,7 @@ export default function Home() {
             <p>Hello, {greetingMessage()}</p>
             <h2 className="big-heading text-blue">
               {" "}
-              It's{" "}
+              It&apos;s{" "}
               {NAME.split("").map((t, idx) => {
                 return (
                   <span
@@ -251,10 +251,10 @@ function ContactMe() {
         <a href="#journey" className="hashLink">
           #
         </a>{" "}
-        Let's Connect!!
+        Let&apos;s Connect!!
       </h1>
       <div className="mx-auto mt-6 mb-6" style={{ maxWidth: "650px" }}>
-        Ain't it amazing meeting people? Whether for a project or for
+        Ain&apos;t it amazing meeting people? Whether for a project or for
         freelancing or just to say Hi. Just hit me up. I usually respond within
         few hours.
       </div>
