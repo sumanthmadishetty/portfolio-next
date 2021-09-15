@@ -18,7 +18,6 @@ class MyDocument extends Document {
           <meta name="description" content="Sumanth Madishetty" />
           {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script> */}
-          <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
         </Head>
         <body className="px-10">
           <Main />
