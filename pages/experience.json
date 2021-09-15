@@ -1,0 +1,40 @@
+[
+  {
+    "orgName": "Reputation",
+    "orgWebSite": "https://reputation.com",
+    "start": "July 2021",
+    "end": "Present",
+    "designation": "Senior Software Engineer",
+    "accomplishments": [
+      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
+      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
+      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
+      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
+      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features"
+    ]
+  },
+  {
+    "orgName": "galleri5",
+    "orgWebSite": "https://galleri5.com",
+    "start": "May 2018",
+    "end": "Sept 2020",
+    "designation": "Associate Software Engineer",
+    "accomplishments": [
+      "Developed the backend (Python/Chalice/Mongo) and frontend (ReactJs) for our SAAS platform, which enables brands to create and run campaigns on multiple social media platforms"
+    ]
+  },
+  {
+    "orgName": "Techsophy",
+    "orgWebSite": "https://techsophy.com",
+    "start": "May 2018",
+    "end": "Sept 2020",
+    "designation": "Associate Software Engineer",
+    "accomplishments": [
+      "Implemented custom webpack configuration to use React in conjunction with Rails",
+      "Implemented custom webpack configuration to use React in conjunction with Rails",
+      "Implemented custom webpack configuration to use React in conjunction with Rails",
+      "Implemented custom webpack configuration to use React in conjunction with Rails",
+      "Implemented custom webpack configuration to use React in conjunction with Rails"
+    ]
+  }
+]
