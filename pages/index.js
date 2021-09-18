@@ -68,11 +68,11 @@ export default function Home() {
       <div id="backCanvas" className={styles.absCanvas} />
 
       <main id="mainContainer" className={styles.main}>
-        <div className="z-10 flex all-center">
+        <div className="z-10 flex all-center mobile-flex-col text-center lg:text-left">
           {/* <!-- Copyright Nintendo --> */}
           <i className="nes-mario is-large mr-2"></i>
           <div className="ml-4">
-            <p>Hello, {greetingMessage()}</p>
+            <p className={styles.greetingHeader}>Hello, {greetingMessage()}</p>
             <h2 className="big-heading text-blue">
               {" "}
               It&apos;s{" "}
@@ -104,7 +104,15 @@ export default function Home() {
 function SlideOne() {
   return (
     <main className={styles.main}>
-      <div className="mb-10 grid md:grid-cols-2 gap-4 sm:grid-cols-1 md:px-16 px-2">
+      <div className="mb-10 grid grid-rows-2 md:grid-cols-2 gap-4 sm:grid-cols-1 md:px-16 px-2">
+        <div className="relative">
+          <Image
+            objectFit="contain"
+            layout="fill"
+            alt="Sumanth Madishetty"
+            src="/me.JPG"
+          />
+        </div>
         <div className="">
           <div
             className={`nes-container is-dark with-title ${styles.aboutMeContainer}`}
@@ -123,20 +131,10 @@ function SlideOne() {
             <ul style={{ listStyle: "inside" }}>
               <li>ReactJS</li>
               <li>NodeJS</li>
-              <li>NodeJS</li>
-              <li>NodeJS</li>
-              <li>NodeJS</li>
-              <li>liython</li>
+              <li>Python</li>
+              <li>Ruby on Rails</li>
             </ul>
           </div>
-        </div>
-        <div className="relative">
-          <Image
-            objectFit="contain"
-            layout="fill"
-            alt="Sumanth Madishetty"
-            src="/me.JPG"
-          />
         </div>
       </div>
     </main>
@@ -155,8 +153,11 @@ function SlideTwo() {
   };
 
   return (
-    <div className="m-16">
-      <h1 style={{ color: "var(--cust-peach)", fontSize: "35px" }}>
+    <div className="m-4 lg:m-16">
+      <h1
+        className="big-heading-xl"
+        style={{ color: "var(--cust-peach)", fontSize: "35px" }}
+      >
         <a href="#journey" className="hashLink">
           #
         </a>{" "}
@@ -191,7 +192,7 @@ function SlideTwo() {
         <div>
           <div
             className="nes-container is-rounded is-dark"
-            style={{ backgroundColor: "transparent" }}
+            style={{ backgroundColor: "transparent", minHeight: "350px" }}
           >
             {renderSelectedData(selected)}
           </div>
@@ -224,13 +225,12 @@ function SlideTwo() {
     return (
       <div className="flex flex-col">
         <div className="flex flex-col mx-auto items-center">
-          <h1 className="mx-auto text-5xl">{orgData.orgName}</h1>
-          <div style={{ fontSize: "12px" }} className="flex items-center">
-            {orgData.designation} (
-            <span>
+          <h1 className="mx-auto text-2xl lg:text-5xl">{orgData.orgName}</h1>
+          <div className="text-sm text-center md:text-left lg:text-left sm:text-sm flex flex-col  md:flex-row lg:flex-row items-center row-lg">
+            {orgData.designation},
+            <span className="mt-2 md:mt-0 lg:mt-0">
               {orgData.start} - {orgData.end}
             </span>
-            )
           </div>
         </div>
         <ul
@@ -241,7 +241,7 @@ function SlideTwo() {
 
         <ul
           style={{ listStyle: "inside" }}
-          className={`${styles.customList} nes-list is-dark mx-6`}
+          className={`${styles.customList} nes-list is-dark mx-6 text-sm`}
         >
           {orgData.accomplishments.map((i, idx) => (
             <li className={"mb-4"} key={idx}>
@@ -256,9 +256,9 @@ function SlideTwo() {
 
 function ContactMe() {
   return (
-    <div className="m-16 text-center">
+    <div className="m-4 lg:m-16 text-center">
       <h1
-        className="mx-auto text-center"
+        className="mx-auto text-center big-heading-xl"
         style={{ color: "var(--cust-peach)", fontSize: "35px" }}
       >
         <a href="#journey" className="hashLink">
@@ -266,7 +266,7 @@ function ContactMe() {
         </a>{" "}
         Let&apos;s Connect!!
       </h1>
-      <div className="mx-auto mt-6 mb-6" style={{ maxWidth: "650px" }}>
+      <div className="text-sm mx-auto mt-6 mb-6" style={{ maxWidth: "650px" }}>
         Ain&apos;t it amazing meeting people? Whether for a project or for
         freelancing or just to say Hi. Just hit me up. I usually respond within
         few hours.

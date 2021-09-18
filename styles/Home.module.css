@@ -131,6 +131,17 @@
   color: var(--cust-red);
 }
 
+@media (max-width: 1000px) {
+  .highlightCharacter {
+    font-size: 18px;
+  }
+
+  .nameText:hover:not(.highlightCharacter) {
+    transform: scale(5);
+    font-size: 18px;
+  }
+}
+
 .absCanvas {
   position: fixed;
   top: 0px;
@@ -169,6 +180,7 @@
   overflow-x: scroll;
   z-index: 100;
   display: flex;
+  width: calc(100% + 1rem);
 }
 
 .mobileTabs > li {
@@ -205,5 +217,15 @@
   .nes-mario {
     width: 2rem;
     height: 3rem;
+  }
+
+  .greetingHeader {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .aboutMeContainer {
+    font-size: 0.5rem;
+    line-height: 2;
   }
 }

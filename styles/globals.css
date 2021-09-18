@@ -7,6 +7,11 @@ body {
   color: white;
 }
 
+body {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 :root {
   --cust-blue: #1560ad;
   --cust-red: #f81c2f;
@@ -44,4 +49,38 @@ a {
 .hashLink {
   color: var(--cust-blue) !important;
   z-index: 100;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .big-heading {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+  }
+
+  .mobile-flex-col {
+    flex-direction: column;
+  }
+
+  .big-heading-xl {
+    font-size: 18px !important;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .row-lg {
+    flex-direction: row;
+  }
 }
