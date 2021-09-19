@@ -2,15 +2,14 @@
   {
     "orgName": "Reputation",
     "orgWebSite": "https://reputation.com",
+    "isCurrent": true,
     "start": "July 2021",
     "end": "Present",
     "designation": "Senior Software Engineer",
     "accomplishments": [
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features"
+      "Developing Configurable Core Components for the product, which will be used by all the teams",
+      "Researched and Suggest various methodologies for achieving 100% Accessibility throughout the product",
+      "Help New Hires with project setup and initial KT of the product"
     ]
   },
   {
@@ -20,7 +19,10 @@
     "end": "Sept 2020",
     "designation": "Associate Software Engineer",
     "accomplishments": [
-      "Developed the backend (Python/Chalice/Mongo) and frontend (ReactJs) for our SAAS platform, which enables brands to create and run campaigns on multiple social media platforms"
+      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
+      "Presented software design issues, questions, and suggestions for the      purpose of arriving at alternative courses of action",
+      "Designed, Developed and executed Product Road map",
+      "Developed the backend (Python/ Chalice/ Mongo) and frontend (ReactJs) for our SAAS platform, which enables brands to create and  run campaigns on multiple social media platforms"
     ]
   },
   {
@@ -30,11 +32,11 @@
     "end": "Sept 2020",
     "designation": "Associate Software Engineer",
     "accomplishments": [
+      "Developed RESTFUL APIs and integrated various third-party libraries like Stripe, Razorpay, Google Maps)",
+      "End-to-end web application development with ReactJs, Ruby On Rails",
+      "Written Functional & Snapshot Test Cases for react using Jest & Enzyme for various Projects",
       "Implemented custom webpack configuration to use React in conjunction with Rails",
-      "Implemented custom webpack configuration to use React in conjunction with Rails",
-      "Implemented custom webpack configuration to use React in conjunction with Rails",
-      "Implemented custom webpack configuration to use React in conjunction with Rails",
-      "Implemented custom webpack configuration to use React in conjunction with Rails"
+      "Worked on the multiple software projects and participated in the whole software development process from design to implementation and delivery."
     ]
   }
 ]

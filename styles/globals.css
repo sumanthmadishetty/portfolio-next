@@ -47,7 +47,7 @@ a {
 }
 
 .hashLink {
-  color: var(--cust-blue) !important;
+  color: var(--cust-red) !important;
   z-index: 100;
 }
 
@@ -57,7 +57,7 @@ a {
     padding-right: 1rem;
   }
   .big-heading {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -75,7 +75,7 @@ a {
   .big-heading-xl {
     font-size: 18px !important;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 150px;
   }
 }
 

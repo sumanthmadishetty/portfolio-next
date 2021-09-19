@@ -192,7 +192,7 @@
 }
 
 .selectedMobileTab {
-  border-bottom-color: var(--cust-blue) !important;
+  border-bottom-color: var(--cust-red) !important;
 }
 
 @media (max-width: 1004px) {
@@ -225,7 +225,7 @@
   }
 
   .aboutMeContainer {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     line-height: 2;
   }
 }
