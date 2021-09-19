@@ -6,6 +6,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          {/* eslint-disable-next-line @next/next/google-font-display */}
           <link
             href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=block"
             rel="stylesheet"
@@ -14,8 +15,25 @@ class MyDocument extends Document {
             href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet"
           />
-          <title>Sumanth Madishetty</title>
-          <meta name="description" content="Sumanth Madishetty" />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-PVWDD9SG9P"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'G-PVWDD9SG9P');
+          `,
+            }}
+          />
+          <meta
+            name="description"
+            content="Full Stack Developer working primarily on ReactJs, NodeJs, Python, Ruby on Rails"
+          />
           {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script> */}
         </Head>
