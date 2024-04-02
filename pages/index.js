@@ -6,6 +6,12 @@ import Script from "next/script";
 import EXPERIENCE from "./api/experience.json";
 import CONTENT from "./api/content.json";
 
+const badgeClass = {
+  domain: "is-warning",
+  workflow: "is-primary",
+  frame: "is-error",
+};
+
 function greetingMessage() {
   const date = new Date();
   const curHr = date.getHours();
@@ -94,6 +100,7 @@ export default function Home() {
         </div>
       </main>
       <SlideOne />
+      <ThingsThatIHaveWorkedOn />
       <SlideTwo />
       <ContactMe />
     </>
@@ -138,6 +145,120 @@ function SlideOne() {
         </div>
       </div>
     </main>
+  );
+}
+
+function ThingsThatIHaveWorkedOn() {
+  const stacks = [
+    {
+      title: "Javascript",
+      type: "domain",
+    },
+    {
+      title: "ReactJS",
+      type: "workflow",
+    },
+    {
+      title: "Typescript",
+      type: "workflow",
+    },
+    {
+      title: "NodeJs",
+      type: "workflow",
+    },
+    {
+      title: "Next",
+      type: "workflow",
+    },
+    {
+      title: "Express",
+      type: "workflow",
+    },
+    {
+      title: "Fastify",
+      type: "workflow",
+    },
+
+    {
+      title: "Serverless",
+      type: "workflow",
+    },
+    {
+      title: "Webpack",
+      type: "workflow",
+    },
+    {
+      title: "Java",
+      type: "domain",
+    },
+    {
+      title: "Spring Boot",
+      type: "workflow",
+    },
+    {
+      title: "Python",
+      type: "domain",
+    },
+    { title: "Chalice", type: "workflow" },
+    { title: "Fast API", type: "workflow" },
+    { title: "Flask", type: "workflow" },
+    {
+      title: "Ruby",
+      type: "domain",
+    },
+    {
+      title: "AWS",
+      type: "domain",
+    },
+    {
+      title: "Snowflake",
+      type: "domain",
+    },
+    {
+      title: "Postgres",
+      type: "frame",
+    },
+    {
+      title: "Mongo",
+      type: "frame",
+    },
+    {
+      title: "Graphql",
+      type: "frame",
+    },
+  ];
+
+  return (
+    <div className="m-4 lg:m-16">
+      <h1
+        className="big-heading-xl"
+        style={{ color: "var(--cust-peach)", fontSize: "35px" }}
+      >
+        <a href="#journey" className="hashLink">
+          #
+        </a>{" "}
+        Things that i have worked on
+      </h1>
+      <div
+        className="nes-container is-rounded is-dark flex justify-center flex-wrap gap-4"
+        style={{ backgroundColor: "transparent", minHeight: "350px" }}
+      >
+        {stacks.map((i) => {
+          return (
+            <a
+              key={i.title}
+              href="#"
+              className={`w-auto nes-badge `}
+              // style={{ width: "fit-content" }}
+            >
+              <span className={`${badgeClass[i.type]}`}>
+                {i.title || "DEF"}
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 
@@ -225,7 +346,7 @@ function SlideTwo() {
     return (
       <div className="flex flex-col">
         <div className="flex flex-col mx-auto items-center">
-          <h1 className="mx-auto text-2xl lg:text-5xl">{orgData.orgName}</h1>
+          <h1 className="mx-auto text-2xl lg:text-2xl">{orgData.orgName}</h1>
           <div className="text-sm text-center md:text-left lg:text-left sm:text-sm flex flex-col  md:flex-row lg:flex-row items-center row-lg">
             {orgData.designation},
             <span className="mt-2 md:mt-0 lg:mt-0">
@@ -233,6 +354,9 @@ function SlideTwo() {
             </span>
           </div>
         </div>
+        {orgData?.summary && (
+          <p className=" mt-4 text-sm leading-8">{orgData?.summary}</p>
+        )}
         <ul
           className={`${styles.customList} nes-list is-dark is-circle mx-6 mt-4`}
         >
