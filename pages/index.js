@@ -129,19 +129,20 @@ function SlideOne() {
               Me & Myself
             </p>
             <p className="leading-9">
-              Hey there! I'm Sumanth Madishetty, a full-stack developer with
+              {`Hey there! I'm Sumanth Madishetty, a full-stack developer with
               over 5 years of experience. My expertise lies primarily in
-              JavaScript-based{" "}
+              JavaScript-based`}{" "}
               <span className="nes-text is-primary">
                 full-stack development
               </span>
-              .Additionally, I'm well-versed in{" "}
+              .Additionally, {`I'm`} well-versed in{" "}
               <span className="nes-text is-primary">DevOps</span> practices,
-              ensuring smooth software deployment in the cloud. I've also delved
-              into{" "}
+              ensuring smooth software deployment in the cloud. {`I've`} also
+              delved into{" "}
               <span className="nes-text is-primary"> data engineering</span>,
               working on pipelines and data warehouses to extract valuable
-              insights. Let's collaborate and create something awesome together!
+              insights. {`Let's`} collaborate and create something awesome
+              together!
             </p>
           </div>
         </div>
