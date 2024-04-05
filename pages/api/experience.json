@@ -1,40 +1,54 @@
+
 [
   {
-    "orgName": "Reputation",
-    "orgWebSite": "https://reputation.com",
-    "start": "July 2021",
+    "orgName": "Niro",
+    "orgWebsite": "https://niro.money",
+    "start": "December 2021",
     "end": "Present",
+    "designation": "SDE-3",
+    "summary": "At Niro, Apart from normal full stack work, Got a chance to maintain Entire Cloud , Set up CI CD Pipelines, Create Data pipeline from various AWS sources to Snowflake, Maintain data warehouse, Design, Develop and Lead the microservice for all post disbursal flows of a low be it collections, finance etc",
+    "accomplishments": [
+      "Designed and developed a data pipeline to transfer data from RDS to Snowflake.",
+      "Designed and developed the Credit Line product.",
+      "Evaluated and led GraphQL aggregation layers in our microservices architecture.",
+      "Designed and led development of a microservice for loan repayment flows.",
+      "Deploying and Maintianing Cloud Infra, Deployement Scripts, CI CD Pipeline"
+    ]
+  },
+  {
+    "orgName": "Reputation",
+    "orgWebsite": "https://reputation.com",
+    "start": "July 2021",
+    "end": "December 2021",
     "designation": "Senior Software Engineer",
     "accomplishments": [
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features",
-      "Evaluated and Proposed solutions to resolve complex architectural challenges in order to introduce innovative features"
+      "Developed a custom video recorder component with caption features.",
+      "Developed reporting tools for customer feedback."
     ]
   },
   {
     "orgName": "galleri5",
-    "orgWebSite": "https://galleri5.com",
+    "orgWebsite": "https://galleri5.com",
     "start": "May 2018",
-    "end": "Sept 2020",
+    "end": "September 2020",
     "designation": "Associate Software Engineer",
     "accomplishments": [
-      "Developed the backend (Python/Chalice/Mongo) and frontend (ReactJs) for our SAAS platform, which enables brands to create and run campaigns on multiple social media platforms"
+      "Developed the backend (Python/Chalice/Mongo) and frontend (ReactJS) for our SAAS platform, enabling brands to create and run campaigns on multiple social media platforms.",
+      "Developed a Linktree alternative with affiliate product selling features.",
+      "Suggested and developed various features for easier influencer discoverability by brands on our SAAS platform."
     ]
   },
   {
     "orgName": "Techsophy",
-    "orgWebSite": "https://techsophy.com",
+    "orgWebsite": "https://techsophy.com",
     "start": "May 2018",
-    "end": "Sept 2020",
+    "end": "September 2020",
     "designation": "Associate Software Engineer",
     "accomplishments": [
-      "Implemented custom webpack configuration to use React in conjunction with Rails",
-      "Implemented custom webpack configuration to use React in conjunction with Rails",
-      "Implemented custom webpack configuration to use React in conjunction with Rails",
-      "Implemented custom webpack configuration to use React in conjunction with Rails",
-      "Implemented custom webpack configuration to use React in conjunction with Rails"
+      "Implemented custom Webpack configuration to use React in conjunction with Rails.",
+      "Implemented core functionalities for web applications such as push notifications, authentication, chatbots, and payment services.",
+      "Implemented Optical Character Recognition (OCR) for reading data from various documents.",
+      "Wrote functional and snapshot test cases for React using Jest and Enzyme for various projects."
     ]
   }
 ]

@@ -19,7 +19,7 @@ class MyDocument extends Document {
           {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script> */}
         </Head>
-        <body>
+        <body style={{ maxWidth: "1500px", margin: "auto" }}>
           <Main />
           <NextScript />
         </body>

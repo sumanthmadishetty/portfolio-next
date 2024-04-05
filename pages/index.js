@@ -6,6 +6,12 @@ import Script from "next/script";
 import EXPERIENCE from "./api/experience.json";
 import CONTENT from "./api/content.json";
 
+const badgeClass = {
+  domain: "is-warning",
+  workflow: "is-primary",
+  frame: "is-error",
+};
+
 function greetingMessage() {
   const date = new Date();
   const curHr = date.getHours();
@@ -94,6 +100,7 @@ export default function Home() {
         </div>
       </main>
       <SlideOne />
+      <ThingsThatIHaveWorkedOn />
       <SlideTwo />
       <ContactMe />
     </>
@@ -104,10 +111,10 @@ export default function Home() {
 function SlideOne() {
   return (
     <main className={styles.main}>
-      <div className="mb-10 grid grid-rows-2 md:grid-cols-2 gap-4 sm:grid-cols-1 md:px-16 px-2">
+      <div className="mb-4 grid grid-rows-2 md:grid-cols-2 gap-4 sm:grid-cols-1 md:px-16 px-2">
         <div className="relative">
           <Image
-            objectFit="contain"
+            objectFit="cover"
             layout="fill"
             alt="Sumanth Madishetty"
             src="/me.JPG"
@@ -116,28 +123,148 @@ function SlideOne() {
         <div className="">
           <div
             className={`nes-container is-dark with-title ${styles.aboutMeContainer}`}
+            style={{ minHeight: "300px" }}
           >
             <p style={{ backgroundColor: "black" }} className="title">
               Me & Myself
             </p>
-            <p>
-              Hey there! I am Sumanth Madishetty, Web Developer, with more than
-              3 years of experience in Front end and Backend development
-              currently working as a Senior Software Engineer, in Reputation.
+            <p className="leading-9">
+              Hey there! I'm Sumanth Madishetty, a full-stack developer with
+              over 5 years of experience. My expertise lies primarily in
+              JavaScript-based{" "}
+              <span className="nes-text is-primary">
+                full-stack development
+              </span>
+              .Additionally, I'm well-versed in{" "}
+              <span className="nes-text is-primary">DevOps</span> practices,
+              ensuring smooth software deployment in the cloud. I've also delved
+              into{" "}
+              <span className="nes-text is-primary"> data engineering</span>,
+              working on pipelines and data warehouses to extract valuable
+              insights. Let's collaborate and create something awesome together!
             </p>
-            <ul className={`${styles.customList} nes-list is-dark is-circle`}>
-              <li>My Primary Skills:</li>
-            </ul>
-            <ul style={{ listStyle: "inside" }}>
-              <li>ReactJS</li>
-              <li>NodeJS</li>
-              <li>Python</li>
-              <li>Ruby on Rails</li>
-            </ul>
           </div>
         </div>
       </div>
     </main>
+  );
+}
+
+function ThingsThatIHaveWorkedOn() {
+  const stacks = [
+    {
+      title: "Javascript",
+      type: "domain",
+    },
+    {
+      title: "ReactJS",
+      type: "workflow",
+    },
+    {
+      title: "Typescript",
+      type: "workflow",
+    },
+    {
+      title: "NodeJs",
+      type: "workflow",
+    },
+    {
+      title: "Next",
+      type: "workflow",
+    },
+    {
+      title: "Express",
+      type: "workflow",
+    },
+    {
+      title: "Fastify",
+      type: "workflow",
+    },
+
+    {
+      title: "Serverless",
+      type: "workflow",
+    },
+    {
+      title: "Webpack",
+      type: "workflow",
+    },
+    {
+      title: "Java",
+      type: "domain",
+    },
+    {
+      title: "Spring Boot",
+      type: "workflow",
+    },
+    {
+      title: "Python",
+      type: "domain",
+    },
+    { title: "Chalice", type: "workflow" },
+    { title: "Fast API", type: "workflow" },
+    { title: "Flask", type: "workflow" },
+    {
+      title: "Ruby",
+      type: "domain",
+    },
+    {
+      title: "AWS",
+      type: "domain",
+    },
+    {
+      title: "Snowflake",
+      type: "domain",
+    },
+    {
+      title: "Postgres",
+      type: "frame",
+    },
+    {
+      title: "Mongo",
+      type: "frame",
+    },
+    {
+      title: "Graphql",
+      type: "frame",
+    },
+  ];
+
+  return (
+    <div className="m-4 lg:m-16">
+      <h1
+        className="big-heading-xl"
+        style={{ color: "var(--cust-peach)", fontSize: "35px" }}
+      >
+        <a href="#journey" className="hashLink">
+          #
+        </a>{" "}
+        Things that i have worked on
+      </h1>
+      <div
+        className="nes-container is-rounded is-dark flex justify-center flex-wrap gap-6 px-8"
+        style={{
+          backgroundColor: "transparent",
+          minHeight: "350px",
+          padding: "40px 20px",
+        }}
+      >
+        {stacks.map((i) => {
+          return (
+            <a
+              key={i.title}
+              href="#"
+              className={`w-auto nes-badge `}
+              // style={{ width: "fit-content" }}
+            >
+              <span className={`${badgeClass[i.type]}`}>
+                {i.title || "DEF"}
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 
@@ -153,7 +280,7 @@ function SlideTwo() {
   };
 
   return (
-    <div className="m-4 lg:m-16">
+    <div className="m-4 mt-14 lg:m-36">
       <h1
         className="big-heading-xl"
         style={{ color: "var(--cust-peach)", fontSize: "35px" }}
@@ -225,7 +352,7 @@ function SlideTwo() {
     return (
       <div className="flex flex-col">
         <div className="flex flex-col mx-auto items-center">
-          <h1 className="mx-auto text-2xl lg:text-5xl">{orgData.orgName}</h1>
+          <h1 className="mx-auto text-2xl lg:text-2xl">{orgData.orgName}</h1>
           <div className="text-sm text-center md:text-left lg:text-left sm:text-sm flex flex-col  md:flex-row lg:flex-row items-center row-lg">
             {orgData.designation},
             <span className="mt-2 md:mt-0 lg:mt-0">
@@ -233,6 +360,9 @@ function SlideTwo() {
             </span>
           </div>
         </div>
+        {/* {orgData?.summary && (
+          <p className=" mt-4 text-sm leading-8">{orgData?.summary}</p>
+        )} */}
         <ul
           className={`${styles.customList} nes-list is-dark is-circle mx-6 mt-4`}
         >
