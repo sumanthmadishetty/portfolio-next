@@ -1,7 +1,7 @@
 
 [
   {
-    "orgName": "Niro (QFI Technologies)",
+    "orgName": "Niro",
     "orgWebsite": "https://niro.money",
     "start": "December 2021",
     "end": "Present",
@@ -11,7 +11,8 @@
       "Designed and developed a data pipeline to transfer data from RDS to Snowflake.",
       "Designed and developed the Credit Line product.",
       "Evaluated and led GraphQL aggregation layers in our microservices architecture.",
-      "Designed and led development of a microservice for loan repayment flows."
+      "Designed and led development of a microservice for loan repayment flows.",
+      "Deploying and Maintianing Cloud Infra, Deployement Scripts, CI CD Pipeline"
     ]
   },
   {

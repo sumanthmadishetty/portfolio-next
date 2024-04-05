@@ -111,10 +111,10 @@ export default function Home() {
 function SlideOne() {
   return (
     <main className={styles.main}>
-      <div className="mb-10 grid grid-rows-2 md:grid-cols-2 gap-4 sm:grid-cols-1 md:px-16 px-2">
+      <div className="mb-4 grid grid-rows-2 md:grid-cols-2 gap-4 sm:grid-cols-1 md:px-16 px-2">
         <div className="relative">
           <Image
-            objectFit="contain"
+            objectFit="cover"
             layout="fill"
             alt="Sumanth Madishetty"
             src="/me.JPG"
@@ -123,24 +123,26 @@ function SlideOne() {
         <div className="">
           <div
             className={`nes-container is-dark with-title ${styles.aboutMeContainer}`}
+            style={{ minHeight: "300px" }}
           >
             <p style={{ backgroundColor: "black" }} className="title">
               Me & Myself
             </p>
-            <p>
-              Hey there! I am Sumanth Madishetty, Web Developer, with more than
-              3 years of experience in Front end and Backend development
-              currently working as a Senior Software Engineer, in Reputation.
+            <p className="leading-9">
+              Hey there! I'm Sumanth Madishetty, a full-stack developer with
+              over 5 years of experience. My expertise lies primarily in
+              JavaScript-based{" "}
+              <span className="nes-text is-primary">
+                full-stack development
+              </span>
+              .Additionally, I'm well-versed in{" "}
+              <span className="nes-text is-primary">DevOps</span> practices,
+              ensuring smooth software deployment in the cloud. I've also delved
+              into{" "}
+              <span className="nes-text is-primary"> data engineering</span>,
+              working on pipelines and data warehouses to extract valuable
+              insights. Let's collaborate and create something awesome together!
             </p>
-            <ul className={`${styles.customList} nes-list is-dark is-circle`}>
-              <li>My Primary Skills:</li>
-            </ul>
-            <ul style={{ listStyle: "inside" }}>
-              <li>ReactJS</li>
-              <li>NodeJS</li>
-              <li>Python</li>
-              <li>Ruby on Rails</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -240,8 +242,12 @@ function ThingsThatIHaveWorkedOn() {
         Things that i have worked on
       </h1>
       <div
-        className="nes-container is-rounded is-dark flex justify-center flex-wrap gap-4"
-        style={{ backgroundColor: "transparent", minHeight: "350px" }}
+        className="nes-container is-rounded is-dark flex justify-center flex-wrap gap-6 px-8"
+        style={{
+          backgroundColor: "transparent",
+          minHeight: "350px",
+          padding: "40px 20px",
+        }}
       >
         {stacks.map((i) => {
           return (
@@ -274,7 +280,7 @@ function SlideTwo() {
   };
 
   return (
-    <div className="m-4 lg:m-16">
+    <div className="m-4 mt-14 lg:m-36">
       <h1
         className="big-heading-xl"
         style={{ color: "var(--cust-peach)", fontSize: "35px" }}
@@ -354,9 +360,9 @@ function SlideTwo() {
             </span>
           </div>
         </div>
-        {orgData?.summary && (
+        {/* {orgData?.summary && (
           <p className=" mt-4 text-sm leading-8">{orgData?.summary}</p>
-        )}
+        )} */}
         <ul
           className={`${styles.customList} nes-list is-dark is-circle mx-6 mt-4`}
         >
