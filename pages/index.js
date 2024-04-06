@@ -70,6 +70,7 @@ export default function Home() {
       ></Script>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <title>Sumanth Madishetty</title>
       </Head>
       <div id="backCanvas" className={styles.absCanvas} />
 
@@ -128,14 +129,14 @@ function SlideOne() {
             <p style={{ backgroundColor: "black" }} className="title">
               Me & Myself
             </p>
-            <p className="leading-9">
+            <p className="lg:leading-9 leading-7 text-base lg:text-sm md:text-sm">
               {`Hey there! I'm Sumanth Madishetty, a full-stack developer with
               over 5 years of experience. My expertise lies primarily in
               JavaScript-based`}{" "}
               <span className="nes-text is-primary">
-                full-stack development
+                full stack development
               </span>
-              .Additionally, {`I'm`} well-versed in{" "}
+              . Additionally, {`I'm`} well versed in{" "}
               <span className="nes-text is-primary">DevOps</span> practices,
               ensuring smooth software deployment in the cloud. {`I've`} also
               delved into{" "}
