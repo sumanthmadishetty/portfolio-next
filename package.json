@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@material-ui/lab": "^4.0.0-alpha.60",
+    "mixpanel-browser": "^2.59.0",
     "nes.css": "2.3.0",
     "next": "11.0.1",
     "react": "17.0.2",
