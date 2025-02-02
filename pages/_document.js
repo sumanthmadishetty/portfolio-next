@@ -1,15 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
-import mixpanel from "mixpanel-browser";
 
 class MyDocument extends Document {
-  componentDidMount() {
-    mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN, {
-      track_pageview: true,
-      persistence: "localStorage",
-    });
-  }
-
   render() {
     return (
       <Html>
