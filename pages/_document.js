@@ -21,11 +21,13 @@ class MyDocument extends Document {
           ></script>
 
           <script
-            dangerouslySetInnerHTML={`window.dataLayer = window.dataLayer || [];
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-E3JVDXBKRB');`}
+  gtag('config', 'G-E3JVDXBKRB');`,
+            }}
           ></script>
 
           <meta name="description" content="Sumanth Madishetty" />
