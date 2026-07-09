@@ -1,10 +1,33 @@
 
 [
   {
+    "orgName": "Skillsoft",
+    "orgWebsite": "https://www.skillsoft.com",
+    "start": "June 2025",
+    "end": "Present",
+    "designation": "Principal Software Engineer",
+    "summary": "Working as a Principal Software Engineer, building a ground-up knowledge graph for a skills intelligence platform using Memgraph as the graph database, along with a broader modern stack.",
+    "accomplishments": [
+      "Architecting and building a knowledge graph from the ground up for a skills intelligence platform using Memgraph.",
+      "Working across the stack with React, Node.js/Express, PostgreSQL, AWS, Elasticsearch, Azure LLM services, and Kubernetes."
+    ],
+    "techStack": [
+      { "title": "Memgraph", "type": "frame" },
+      { "title": "ReactJS", "type": "workflow" },
+      { "title": "NodeJs", "type": "workflow" },
+      { "title": "Express", "type": "workflow" },
+      { "title": "Postgres", "type": "frame" },
+      { "title": "AWS", "type": "domain" },
+      { "title": "Elasticsearch", "type": "frame" },
+      { "title": "Azure LLM", "type": "domain" },
+      { "title": "Kubernetes", "type": "workflow" }
+    ]
+  },
+  {
     "orgName": "Niro",
     "orgWebsite": "https://niro.money",
     "start": "December 2021",
-    "end": "Present",
+    "end": "May 2025",
     "designation": "SDE-3",
     "summary": "At Niro, Apart from normal full stack work, Got a chance to maintain Entire Cloud , Set up CI CD Pipelines, Create Data pipeline from various AWS sources to Snowflake, Maintain data warehouse, Design, Develop and Lead the microservice for all post disbursal flows of a low be it collections, finance etc",
     "accomplishments": [

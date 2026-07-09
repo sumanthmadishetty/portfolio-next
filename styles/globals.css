@@ -5,6 +5,7 @@ body {
   font-family: "Press Start 2P", cursive;
   background-color: black;
   color: white;
+  cursor: url("/cursor.svg") 2 2, auto;
 }
 
 body {
@@ -49,6 +50,21 @@ a {
 .hashLink {
   color: var(--cust-blue) !important;
   z-index: 100;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s steps(1) infinite;
 }
 
 @media (max-width: 1000px) {
