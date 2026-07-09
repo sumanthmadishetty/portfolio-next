@@ -97,6 +97,25 @@ export default function Home() {
                 );
               })}
             </h2>
+            <div
+              className="nes-container is-rounded is-dark flex all-center mt-2"
+              style={{
+                backgroundColor: "transparent",
+                width: "fit-content",
+                gap: "8px",
+                padding: "8px 14px",
+              }}
+            >
+              <i className="nes-icon trophy is-small"></i>
+              <span className="text-sm">@ {EXPERIENCE[0].orgName}</span>
+              <span
+                className="blink text-sm"
+                style={{ color: "#92cc41" }}
+                title="Currently online"
+              >
+                ● ONLINE
+              </span>
+            </div>
           </div>
         </div>
       </main>
@@ -230,6 +249,22 @@ function ThingsThatIHaveWorkedOn() {
       title: "Graphql",
       type: "frame",
     },
+    {
+      title: "Memgraph",
+      type: "frame",
+    },
+    {
+      title: "Elasticsearch",
+      type: "frame",
+    },
+    {
+      title: "Azure",
+      type: "domain",
+    },
+    {
+      title: "Kubernetes",
+      type: "workflow",
+    },
   ];
 
   return (
@@ -362,9 +397,11 @@ function SlideTwo() {
             </span>
           </div>
         </div>
-        {/* {orgData?.summary && (
-          <p className=" mt-4 text-sm leading-8">{orgData?.summary}</p>
-        )} */}
+        {orgData?.summary && (
+          <div className="nes-balloon is-dark from-left mt-4">
+            <p className="text-sm">{orgData.summary}</p>
+          </div>
+        )}
         <ul
           className={`${styles.customList} nes-list is-dark is-circle mx-6 mt-4`}
         >
@@ -372,15 +409,26 @@ function SlideTwo() {
         </ul>
 
         <ul
-          style={{ listStyle: "inside" }}
+          style={{ listStyle: "none" }}
           className={`${styles.customList} nes-list is-dark mx-6 text-sm`}
         >
           {orgData.accomplishments.map((i, idx) => (
             <li className={"mb-4"} key={idx}>
+              <i className="nes-icon star is-small mr-2"></i>
               {i}
             </li>
           ))}
         </ul>
+
+        {orgData?.techStack && (
+          <div className="flex flex-wrap gap-2 mx-6 mt-4">
+            {orgData.techStack.map((t) => (
+              <span key={t.title} className="nes-badge">
+                <span className={badgeClass[t.type]}>{t.title}</span>
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     );
   }
@@ -409,7 +457,9 @@ function ContactMe() {
         target="_blank"
         href="mailto:mailme@sumanth.tech"
       >
-        <button className="nes-btn is-warning">Hello </button>
+        <button className="nes-btn is-warning">
+          <span className="blink">Hello </span>
+        </button>
       </a>
       <div
         style={{ maxWidth: "650px" }}
@@ -421,6 +471,7 @@ function ContactMe() {
           target="_blank"
           rel="noreferrer"
         >
+          <i className="nes-icon coin is-small mr-1"></i>
           <i className="nes-icon github is-medium"></i>
         </a>
         <a
@@ -428,6 +479,7 @@ function ContactMe() {
           target="_blank"
           rel="noreferrer"
         >
+          <i className="nes-icon coin is-small mr-1"></i>
           <i className="nes-icon linkedin is-medium"></i>
         </a>
         <a
@@ -435,6 +487,7 @@ function ContactMe() {
           target="_blank"
           rel="noreferrer"
         >
+          <i className="nes-icon coin is-small mr-1"></i>
           <Image
             width="48px"
             height="48px"
