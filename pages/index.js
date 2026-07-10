@@ -97,25 +97,6 @@ export default function Home() {
                 );
               })}
             </h2>
-            <div
-              className="nes-container is-rounded is-dark flex all-center mt-2"
-              style={{
-                backgroundColor: "transparent",
-                width: "fit-content",
-                gap: "8px",
-                padding: "8px 14px",
-              }}
-            >
-              <i className="nes-icon trophy is-small"></i>
-              <span className="text-sm">@ {EXPERIENCE[0].orgName}</span>
-              <span
-                className="blink text-sm"
-                style={{ color: "#92cc41" }}
-                title="Currently online"
-              >
-                ● ONLINE
-              </span>
-            </div>
           </div>
         </div>
       </main>
