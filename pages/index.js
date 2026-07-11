@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
@@ -97,25 +96,6 @@ export default function Home() {
                 );
               })}
             </h2>
-            <div
-              className="nes-container is-rounded is-dark flex all-center mt-2"
-              style={{
-                backgroundColor: "transparent",
-                width: "fit-content",
-                gap: "8px",
-                padding: "8px 14px",
-              }}
-            >
-              <i className="nes-icon trophy is-small"></i>
-              <span className="text-sm">@ {EXPERIENCE[0].orgName}</span>
-              <span
-                className="blink text-sm"
-                style={{ color: "#92cc41" }}
-                title="Currently online"
-              >
-                ● ONLINE
-              </span>
-            </div>
           </div>
         </div>
       </main>
@@ -133,11 +113,18 @@ function SlideOne() {
     <main className={styles.main}>
       <div className="mb-4 grid grid-rows-2 md:grid-cols-2 gap-4 sm:grid-cols-1 md:px-16 px-2">
         <div className="relative">
-          <Image
-            objectFit="cover"
-            layout="fill"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             alt="Sumanth Madishetty"
             src="/me.JPG"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
           />
         </div>
         <div className="">
@@ -488,12 +475,8 @@ function ContactMe() {
           rel="noreferrer"
         >
           <i className="nes-icon coin is-small mr-1"></i>
-          <Image
-            width="48px"
-            height="48px"
-            alt="stack"
-            src="/stackoverflow.svg"
-          />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img width="48" height="48" alt="stack" src="/stackoverflow.svg" />
         </a>
       </div>
     </div>
