@@ -1,24 +1,34 @@
 {
   "name": "portfolio-next",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@material-ui/lab": "^4.0.0-alpha.60",
-    "mixpanel-browser": "^2.59.0",
-    "nes.css": "2.3.0",
-    "next": "11.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "mixpanel-browser": "^2.81.0",
+    "motion": "^12.42.2",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "three": "^0.185.1",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
-    "eslint": "7.31.0",
-    "eslint-config-next": "11.0.1",
-    "prettier": "2.3.2"
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.185.1",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.2.10",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
   }
 }
