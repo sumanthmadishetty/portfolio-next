@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# sumanth.tech — portfolio
 
-## Getting Started
+Personal portfolio of **Sumanth Madishetty** — a sleek, sci-fi-minimal single-page site with accent 3D and a few gaming touches.
 
-First, run the development server:
+## Stack
+
+- **Next.js 16** (App Router) · **React 19** · **TypeScript**
+- **Tailwind CSS v4** (CSS-first `@theme` config)
+- **React Three Fiber v9** + **drei** — shader starfield + floating icosahedron hero
+- **Motion** for UI animation · **Zustand** for tiny global state
+- **Mixpanel** analytics (set `NEXT_PUBLIC_MIXPANEL_TOKEN`)
+
+## Features
+
+- 3D hero scene, code-split and quality-tiered (static gradient fallback for reduced-motion / no-WebGL / low-power devices)
+- RPG-style **character sheet** for skills with animated stat bars
+- Vertical experience timeline
+- Interactive **particle playground** (attract / repel / vortex)
+- WebAudio-synthesized sound effects (muted by default, toggle in navbar)
+- Konami code easter egg — try `↑↑↓↓←→←→BA`
+
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm install
+npm run dev    # dev server
+npm run build  # production build
+npm run lint   # eslint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Editing content
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+All content lives in typed data files — no component changes needed:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `src/data/profile.ts` — name, bio, socials, quick facts
+- `src/data/skills.ts` — skills with categories and levels
+- `src/data/experience.ts` — work history
+- `src/data/projects.ts` — project cards (currently placeholders)
